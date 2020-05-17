@@ -1,0 +1,28 @@
+{
+  "name": "sw-interview-test",
+  "version": "0.0.1",
+  "description": "Interview test to check skills",
+  "scripts": {
+    "test": "NODE_PATH=dist/ PORT=3000 mocha dist/test --require source-map-support/register",
+    "start": "NODE_PATH=dist/ PORT=3000 node dist/app.js",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/lodash": "^4.14.151",
+    "@types/mocha": "^7.0.2",
+    "@types/request-promise": "^4.1.46",
+    "mocha": "^7.1.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "should": "^13.2.3",
+    "source-map-support": "^0.5.19",
+    "typescript": "^3.9.2"
+  }
+}
